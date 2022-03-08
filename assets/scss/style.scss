@@ -1,0 +1,15 @@
+//base style
+@import "base/index";
+
+//vendor
+@import "vendor/bootstrap-base";
+@import "vendor/bootstrap-components";
+
+//utilities style
+@import "utilities/index";
+
+//layout style
+@import "layouts/index";
+
+//component style
+@import "components/index";

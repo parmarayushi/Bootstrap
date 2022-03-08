@@ -1,0 +1,22 @@
+{
+  "name": "bootstrap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parmarayushi/Bootstrap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parmarayushi/Bootstrap/issues"
+  },
+  "homepage": "https://github.com/parmarayushi/Bootstrap#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}

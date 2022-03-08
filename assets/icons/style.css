@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?5mzyql');
+  src:  url('fonts/icomoon.eot?5mzyql#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?5mzyql') format('truetype'),
+    url('fonts/icomoon.woff?5mzyql') format('woff'),
+    url('fonts/icomoon.svg?5mzyql#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-growth-arrow:before {
+  content: "\e900";
+}
+.icon-home:before {
+  content: "\e902";
+}
+.icon-library:before {
+  content: "\e921";
+}
+.icon-cart:before {
+  content: "\e93a";
+}
+.icon-coin-dollar:before {
+  content: "\e93b";
+}
+.icon-credit-card:before {
+  content: "\e93f";
+}
+.icon-compass:before {
+  content: "\e94a";
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-search:before {
+  content: "\e986";
+}
+.icon-equalizer:before {
+  content: "\e992";
+}
+.icon-settings:before {
+  content: "\e994";
+}
+.icon-pie-chart:before {
+  content: "\e99a";
+}
+.icon-stats-bars:before {
+  content: "\e99c";
+}
+.icon-stats-bars2:before {
+  content: "\e99d";
+}
+.icon-trophy:before {
+  content: "\e99e";
+}
+.icon-eye:before {
+  content: "\e9ce";
+}
+.icon-arrow-up-right:before {
+  content: "\ea3b";
+}
+.icon-arrow-down-right:before {
+  content: "\ea3d";
+}
+.icon-radio-checked:before {
+  content: "\ea54";
+}
+.icon-logo:before {
+  content: "\eae9";
+}

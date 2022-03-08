@@ -1,0 +1,39 @@
+.search-box {
+  position: relative;
+  height: 40px;
+  width: 390px;
+  padding: 0.19rem;
+  border: 2px solid #c2c2c2;
+  border-radius: 0.625rem;
+
+  .icon {
+    position: absolute;
+    top: 25%;
+    left: 3%;
+    font-size: 1.2rem;
+    color: #363636;
+  }
+  input {
+    flex: 1;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    padding-left: 2.625rem;
+  }
+}
+
+.filter-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 32px;
+  width: 100px;
+  padding: 0 0.75rem;
+  border: 2px solid #c2c2c2;
+  border-radius: 0.625rem;
+
+  #title {
+    color: #c2c2c2;
+  }
+}

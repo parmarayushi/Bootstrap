@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+
+    <!-- style  -->
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <!-- icons  -->
+    <link rel="stylesheet" href="assets/icons/style.css" />
+</head>
+
+<body>
+    <!-- wrapper starts  -->
+    <div class="d-flex h-100 overflow-hidden">
+        <!-- sidebar starts  -->
+        <aside class="sidebar d-flex flex-column h-100 overflow-hidden">
+            <!-- bard logo starts  -->
+            <div class="bard-logo flex-shrink-0">
+                <span class="icon icon-logo"></span>
+            </div>
+            <!-- bard logo ends  -->
+            <div class="d-flex flex-column justify-content-between flex-grow-1 overflow-hidden">
+                <!-- nav-bar starts  -->
+                <nav class="nav-navbar overflow-vertical">
+                    <ul>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">
+                                <span class="icon icon-home"></span>
+                                <span class="nav-link-name">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="icon icon-trophy"></span>
+                                <span class="nav-link-name">Projects</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="icon icon-library"></span>
+                                <span class="nav-link-name">Billing</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="icon icon-user"></span>
+                                <span class="nav-link-name">Team Members</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="icon icon-stats-bars"></span>
+                                <span class="nav-link-name">Stats</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="icon icon-settings"></span>
+                                <span class="nav-link-name">Settings</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- nav-bar ends  -->
+                <!-- user profile starts  -->
+                <div class="user d-flex flex-column align-item-center justify-content-center">
+                    <div class="user-avatar">
+                        <img class="img" src="assets/img/avatar.png" alt="user-img" />
+                        <div class="user-status"></div>
+                    </div>
+                    <span class="user-name">Aayushi Parmar</span>
+                </div>
+                <!-- user profile ends  -->
+            </div>
+        </aside>
+        <!-- sidebar ends  -->
+        <!-- main wrapper starts  -->
+        <main class="content-wrapper flex-grow-1 overflow-vertical">
+            <section class="section home d-flex h-100">
+                <div class="flex-grow-1 d-flex flex-column">
+                    <!-- header starts  -->
+                    <header class="header d-flex align-item-center">
+                        <div class="search-box d-flex">
+                            <span class="icon icon-search"></span>
+                            <input type="text" id="serach" name="search" placeholder="Search for stats" />
+                        </div>
+                    </header>
+                    <!-- header ends  -->
+                    <!-- user greeting & filter stats start  -->
+                    <div class="d-flex align-item-center justify-content-between mt-5 mr-6">
+                        <div class="heading greet">
+                            <h1>Hello Aayushi</h1>
+                            <span id="greet-welcome">Welcome Back</span>
+                        </div>
+
+                        <div class="filter-box">
+                            <span id="title">Filter</span>
+                            <span class="icon icon-equalizer"></span>
+                        </div>
+                    </div>
+                    <!-- user greeting & filter stats ends  -->
+                    <div class="row">
+                        <!-- card group col start  -->
+                        <div class="card-group-col">
+                            <div class="card card-stats card-group">
+                                <div class="row">
+                                    <!-- card col start  -->
+                                    <div class="card-col">
+                                        <!-- card start  -->
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="card-logo">
+                                                    <span class="icon icon-eye"></span>
+                                                </div>
+                                                <span class="card-title">Views</span>
+                                                <span class="card-text">500</span>
+                                                <span class="card-desc">Per Day</span>
+                                            </div>
+                                        </div>
+                                        <!-- card ends -->
+                                    </div>
+                                    <!-- card col ends  -->
+                                    <!-- card col start  -->
+                                    <div class="card-col">
+                                        <!-- card start  -->
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="card-logo">
+                                                    <span class="icon icon-compass"></span>
+                                                </div>
+                                                <span class="card-title">Visits</span>
+                                                <span class="card-text">2000</span>
+                                                <span class="card-desc">Per minutes</span>
+                                            </div>
+                                        </div>
+                                        <!-- card ends -->
+                                    </div>
+                                    <!-- card col start  -->
+                                    <!-- card col start  -->
+                                    <div class="card-col">
+                                        <!-- card start  -->
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="card-logo">
+                                                    <span class="icon icon-cart"></span>
+                                                </div>
+                                                <span class="card-title">Orders</span>
+                                                <span class="card-text">510</span>
+                                                <span class="card-desc">Per Day</span>
+                                            </div>
+                                        </div>
+                                        <!-- card ends -->
+                                    </div>
+                                    <!-- card col start  -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card group col ends  -->
+                        <!-- card card-col start  -->
+                        <div class="card-col">
+                            <!-- card start  -->
+                            <div class="card card-sales">
+                                <div class="card-body">
+                                    <span class="card-title">Sales</span>
+                                    <span class="card-desc">Total sales today</span>
+                                    <span class="card-text">$500</span>
+                                </div>
+                                <div class="percent">
+                                    <svg>
+                                        <circle cx="50" cy="50" r="35" fill="red"></circle>
+                                        <circle cx="50" cy="50" r="35" style="--percent: 55"></circle>
+                                    </svg>
+                                    <div class="number">
+                                        <span>55<span>%</span></span>
+                                    </div>
+                                </div>
+                                <span class="growth icon-arrow-down-right"></span>
+                            </div>
+                            <!-- card ends  -->
+                        </div>
+                        <!-- card card-col end  -->
+                        <!-- card card-col start  -->
+                        <div class="card-col">
+                            <!-- card start  -->
+                            <div class="card card-profits">
+                                <div class="card-body">
+                                    <span class="card-title">Sales</span>
+                                    <span class="card-desc">Total sales today</span>
+                                    <span class="card-text">$500</span>
+                                </div>
+                                <div class="percent">
+                                    <svg>
+                                        <circle cx="50" cy="50" r="35" fill="red"></circle>
+                                        <circle cx="50" cy="50" r="35" style="--percent: 30"></circle>
+                                    </svg>
+                                    <div class="number">
+                                        <span>30<span>%</span></span>
+                                    </div>
+                                </div>
+                                <span class="growth icon-arrow-down-right"></span>
+                            </div>
+                            <!-- card ends  -->
+                        </div>
+                        <!-- card card-col end  -->
+                        <!-- card card-col start  -->
+                        <div class="card-col">
+                            <!-- card start  -->
+                            <div class="card card-orders">
+                                <div class="card-body">
+                                    <span class="card-title">Sales</span>
+                                    <span class="card-desc">Total sales today</span>
+                                    <span class="card-text">$500</span>
+                                </div>
+                                <div class="percent">
+                                    <svg>
+                                        <circle cx="50" cy="50" r="35" fill="red"></circle>
+                                        <circle cx="50" cy="50" r="35" style="--percent: 80"></circle>
+                                    </svg>
+                                    <div class="number">
+                                        <span>80<span>%</span></span>
+                                    </div>
+                                </div>
+                                <span class="growth icon-arrow-up-right"></span>
+                            </div>
+                            <!-- card ends  -->
+                        </div>
+                        <!-- card card-col end  -->
+                        <!-- card card-col start  -->
+                        <div class="card-col">
+                            <!-- card start  -->
+                            <div class="card card-visits">
+                                <div class="card-body">
+                                    <span class="card-title">Sales</span>
+                                    <span class="card-desc">Total sales today</span>
+                                    <span class="card-text">$500</span>
+                                </div>
+                                <div class="percent">
+                                    <svg>
+                                        <circle cx="50" cy="50" r="35" fill="red"></circle>
+                                        <circle cx="50" cy="50" r="35" style="--percent: 70"></circle>
+                                    </svg>
+                                    <div class="number">
+                                        <span>70<span>%</span></span>
+                                    </div>
+                                </div>
+                                <span class="growth icon-arrow-up-right"></span>
+                            </div>
+                            <!-- card ends  -->
+                        </div>
+                        <!-- card card-col end  -->
+                    </div>
+                </div>
+                <!-- revenue-stats starts -->
+                <div class="revenue-stats">
+                    <h3 class="revenue-stats-title mb-3">Sales Revenue</h3>
+                    <div class="card">
+                        <div class="card-logo">
+                            <span class="icon icon-coin-dollar"></span>
+                        </div>
+                        <div class="card-body">
+                            <span class="card-title">230k</span>
+                            <span class="card-desc">Sales</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-logo">
+                            <span class="icon icon-user"></span>
+                        </div>
+                        <div class="card-body">
+                            <span class="card-title">8.549k</span>
+                            <span class="card-desc">Customers</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-logo">
+                            <span class="icon icon-cart"></span>
+                        </div>
+                        <div class="card-body">
+                            <span class="card-title">1.423k</span>
+                            <span class="card-desc">Products</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-logo">
+                            <span class="icon icon-pie-chart"></span>
+                        </div>
+                        <div class="card-body">
+                            <span class="card-title">$9745</span>
+                            <span class="card-desc">Revenue</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- revenue-stats ends -->
+            </section>
+        </main>
+        <!-- main wrapper end  -->
+    </div>
+    <!-- wrapper ends  -->
+</body>
+
+</html>
