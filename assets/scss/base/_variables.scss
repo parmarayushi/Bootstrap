@@ -2,14 +2,17 @@
 // $font-size-base: 1rem;
 
 // //Sidebar
-// $sidebar-width: 210px;
+$sidebar-width: 210px;
 
 // //components
-
-// $card-padding: 1rem;
-// $card-boader-radius: 25px;
+$card-spacer-y:20px;
+$card-spacer-x:20px;
+$card-border-radius: 20px; 
+$card-border-width:0;  
 
 // //revenue-stats
-// $revenue-stats-width: 250px;
-// $revenue-stats-padding-x: 40px;
-// $revenue-stats-padding-y: 30px;
+$revenue-stats-width: 300px;
+$revenue-stats-padding-x: 40px;
+$revenue-stats-padding-y: 30px;
+
+$border-radius:10px;
