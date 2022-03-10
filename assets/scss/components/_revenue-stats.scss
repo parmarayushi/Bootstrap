@@ -1,6 +1,7 @@
 .revenue-stats {
   flex: 0 0 $revenue-stats-width;
   max-width: $revenue-stats-width;
+  width:300px;
   padding: $revenue-stats-padding-y $revenue-stats-padding-x;
   background-color: $revenue-stats-bg;
   @include border-radius(1.5rem);
@@ -18,16 +19,15 @@
     border-radius: 50%;
     margin-right: 1.8rem;
     .icon {
-      font-size: 16px;
+      font-size: 1rem;
       color: black;
     }
   }
   .card-title {
-    font-size: 18px;
+    font-size: 1.12rem;
     color: $secondary;
   }
-  .card-desc {
-    font-size: 12px;
+  .card-subtitle {
     color: $secondary;
   }
 }

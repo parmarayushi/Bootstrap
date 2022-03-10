@@ -9,8 +9,17 @@
 #search {
   z-index: 9;
   padding-left: 3rem;
-  border-radius: $border-radius;
 }
 .form-control:focus {
   box-shadow: none;
+}
+
+#filter-box{
+  width: 100px;
+  padding-right: 30px;
+}
+
+.icon-filter {
+  top: 11px;
+  right: 12px;
 }

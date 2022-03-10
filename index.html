@@ -1,374 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
 
-    <!-- style  -->
-    <link rel="stylesheet" href="assets/css/style.min.css" />
-    <!-- icons  -->
-    <link rel="stylesheet" href="assets/icons/style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
 
-  <body>
-    <!-- wrapper starts  -->
-    <div class="d-flex h-100 overflow-hidden">
-      <!-- sidebar starts  -->
-      <aside class="sidebar d-flex flex-column h-100 overflow-hidden">
-        <!-- bard logo starts  -->
-        <div class="brand-logo d-flex align-items-center justify-content-start">
-          <span class="brand-logo-icon icon-logo"></span>
-        </div>
-        <!-- bard logo ends  -->
-        <div class="d-flex flex-column justify-content-between flex-grow-1 overflow-hidden">
-          <!-- nav-bar starts  -->
-          <nav class="nav overflow-auto">
-            <ul>
-              <li class="nav-item">
-                <a href="#" class="nav-link active">
-                  <span class="icon icon-home"></span>
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <span class="icon icon-trophy"></span>
-                  Projects
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <span class="icon icon-library"></span>
-                  Billing
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <span class="icon icon-user"></span>
-                  Team Members
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <span class="icon icon-stats-bars"></span>
-                  Stats
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <span class="icon icon-settings"></span>
-                  Settings
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <!-- nav-bar ends  -->
-          <!-- user profile starts  -->
-          <div
-            class="user d-flex flex-column align-items-center justify-content-center"
-          >
-            <div class="user-avatar position-relative">
-              <img class="img" src="assets/img/avatar.png" alt="user-img" />
-              <div class="user-status position-absolute"></div>
-            </div>
-            <span class="user-name">David Milan</span>
+  <!-- style  -->
+  <link rel="stylesheet" href="assets/css/style.min.css" />
+  <!-- icons  -->
+  <link rel="stylesheet" href="assets/icons/style.css" />
+</head>
+
+<body>
+  <div class="d-flex h-100 overflow-hidden">
+
+    <!-- Start:Sidebar -->
+    <aside class="sidebar d-flex flex-column h-100 overflow-hidden">
+      <!-- Star:Brand logo  -->
+      <div class="brand-logo d-flex align-items-center justify-content-start">
+        <span class="brand-logo-icon icon-logo"></span>
+      </div>
+      <!-- End:Brand logo  -->
+
+      <div class="d-flex flex-column justify-content-between flex-grow-1 overflow-hidden">
+        <!-- Start: Navbar  -->
+        <nav class="nav overflow-auto">
+          <ul>
+            <li class="nav-item">
+              <a href="#" class="nav-link active">
+                <span class="icon icon-home me-3"></span>
+                Home
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon icon-trophy me-3"></span>
+                Projects
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon icon-library me-3"></span>
+                Billing
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon icon-user me-3"></span>
+                Team Members
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon icon-stats-bars me-3"></span>
+                Stats
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon icon-settings me-3"></span>
+                Settings
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- End: Navbar  -->
+
+        <!-- Star:User profile  -->
+        <div class="user d-flex flex-column align-items-center justify-content-center">
+          <div class="user-avatar position-relative">
+            <img class="img" src="assets/img/avatar.png" alt="user-img" />
+            <div class="user-status position-absolute"></div>
           </div>
-          <!-- user profile ends  -->
+          <span class="user-name">David Milan</span>
         </div>
-      </aside>
-      <!-- sidebar ends  -->
-      <!-- main wrapper starts  -->
-      <main class="content-wrapper flex-grow-1 overflow-auto">
+        <!-- End:User profile  -->
+
+      </div>
+    </aside>
+    <!-- End:idebar -->
+
+    <!-- Start:Main -->
+    <main class="content-wrapper d-flex flex-grow-1 overflow-auto">
+
+      <!-- Start:Cards Section -->
+      <div class="flex-grow-1 d-flex flex-column">
+
+        <!-- Start:Searchbar  -->
+        <div class="row">
+          <div class="col-8">
+            <div class="d-flex align-item-center search-box d-flex input-group">
+              <input type="text" id="search" name="search" placeholder="Search for stats"
+                class="form-control rounded position-relative" />
+              <span class="search-icon icon-search position-absolute"></span>
+            </div>
+          </div>
+        </div>
+        <!-- End:Searchbar  -->
+
+        <!-- Start:User greeting and filter  -->
+        <div class="d-flex align-item-center justify-content-between mt-5 mr-6">
+          <div class="heading greet">
+            <h2>Hello David</h2>
+            <p id="greet-welcome">Welcome Back!</p>
+          </div>
+
+          <div class="form-group position-relative">
+            <input type="text" class="form-control" id="filter-box" placeholder="Filter">
+            <span class="icon-filter icon-equalizer position-absolute"></span>
+          </div>
+        </div>
+        <!-- End:User greeting and filter  -->
+
+        <!-- Start: Card Stats  -->
         <div class="row g-4">
-          <div class="flex-grow-1 d-flex flex-column col-9">
-            <!-- header starts  -->
-            <div class="row">
-                <div class="col-8">
-                    <div class="d-flex align-item-center search-box d-flex input-group ">
-                        <input
-                          type="text"
-                          id="search"
-                          name="search"
-                          placeholder="Search for stats"
-                          class="form-control rounded position-relative"
-                        />
-                        <span class="search-icon icon-search position-absolute"></span>
-                      </div>
-                </div>
-               
-            </div>
-             
-            <!-- header ends  -->
-            <!-- user greeting & filter stats start  -->
-            <div
-              class="d-flex align-item-center justify-content-between mt-5 mr-6"
-            >
-              <div class="heading greet">
-                <h2>Hello David</h2>
-                <span id="greet-welcome">Welcome Back</span>
-              </div>
+          <div class="col-12">
+            <div class="card card-stats">
+              <div>
+                <div class="row card-body">
 
-              <div class="filter-box">
-                <span id="title">Filter</span>
-                <span class="icon icon-equalizer"></span>
-              </div>
-            </div>
-            <!-- user greeting & filter stats ends  -->
-
-            <div class="row g-4">
-              <!-- card group col start  -->
-              <div class="col-12">
-                <div class="card card-stats">
-                  <div>
-                    <div class="row card-body">
-                      <!-- card col start  -->
-                      <div class="col-4">
-                        <!-- card start  -->
-
-                        <div>
-                          <div class="card-logo  d-flex align-items-center justify-content-center d-flex align-items-center justify-content-center">
-                            <span class="icon icon-eye"></span>
-                          </div>
-                          <p class="card-title">Views</p>
-                          <p class="card-text">500</p>
-                          <p class="card-desc">Per Day</p>
-                        </div>
-
-                        <!-- card ends -->
-                      </div>
-                      <!-- card col ends  -->
-                      <!-- card col start  -->
-                      <div class="col-4">
-                        <!-- card start  -->
-
-                        <div>
-                          <div class="card-logo  d-flex align-items-center justify-content-center">
-                            <span class="icon icon-compass"></span>
-                          </div>
-                          <p class="card-title">Visits</p>
-                          <p class="card-text">2000</p>
-                          <p class="card-desc">Per minutes</p>
-                        </div>
-
-                        <!-- card ends -->
-                      </div>
-                      <!-- card col start  -->
-                      <!-- card col start  -->
-                      <div class="col-4">
-                        <!-- card start  -->
-
-                        <div>
-                          <div class="card-logo  d-flex align-items-center justify-content-center">
-                            <span class="icon icon-cart"></span>
-                          </div>
-                          <p class="card-title">Orders</p>
-                          <p class="card-text">510</p>
-                          <p class="card-desc">Per Day</p>
-                        </div>
-
-                        <!-- card ends -->
-                      </div>
-                      <!-- card col start  -->
+                  <!-- Start: Card Views  -->
+                  <div class="col-4">
+                    <div
+                      class="card-logo d-flex align-items-center justify-content-center d-flex align-items-center justify-content-center">
+                      <span class="icon icon-eye"></span>
                     </div>
+                    <p class="card-subtitle">Views</p>
+                    <p class="card-text">500</p>
+                    <p class="card-subtitle">Per Day</p>
                   </div>
-                </div>
-              </div>
-              <!-- card group col ends  -->
-              <!-- card card-col start  -->
-              <div class="col col-md-6">
-                <!-- card start  -->
-                <div class="card card-sales">
-                  <div
-                    class="card-body d-flex justify-content-between align-items-center position-relative"
-                  >
-                    <div>
-                      <p class="card-title">Sales</p>
-                      <p class="card-desc">Total sales today</p>
-                      <p class="card-text">$500</p>
+                  <!-- End: Card Views  -->
+
+                  <!-- Start: Card Visits  -->
+                  <div class="col-4">
+                    <div class="card-logo d-flex align-items-center justify-content-center">
+                      <span class="icon icon-compass"></span>
                     </div>
-                    <div class="percent position-relative">
-                      <svg class="position-relative">
-                        <circle cx="50" cy="50" r="35" fill="red"></circle>
-                        <circle
-                          cx="50"
-                          cy="50"
-                          r="35"
-                          style="--percent: 55"
-                        ></circle>
-                      </svg>
-                      <div class="number">
-                        <span>55<span>%</span></span>
-                      </div>
-                    </div>
-                    <span
-                      class="growth icon-arrow-down-right position-absolute"
-                    ></span>
+                    <p class="card-subtitle">Visits</p>
+                    <p class="card-text">2000</p>
+                    <p class="card-subtitle">Per minutes</p>
                   </div>
-                </div>
 
-                <!-- card ends  -->
-              </div>
-              <!-- card card-col end  -->
-              <!-- card card-col start  -->
-              <div class="col col-md-6">
-                <!-- card start  -->
-                <div class="card card-profits">
-                  <div
-                    class="card-body d-flex justify-content-between align-items-center position-relative"
-                  >
-                    <div>
-                      <p class="card-title">Sales</p>
-                      <p class="card-desc">Total sales today</p>
-                      <p class="card-text">$500</p>
-                    </div>
+                  <!-- End: Card Visits  -->
 
-                    <div class="percent position-relative">
-                      <svg class="position-relative">
-                        <circle cx="50" cy="50" r="35" fill="red"></circle>
-                        <circle
-                          cx="50"
-                          cy="50"
-                          r="35"
-                          style="--percent: 30"
-                        ></circle>
-                      </svg>
-                      <div class="number">
-                        <span>30<span>%</span></span>
-                      </div>
+                  <!-- Start: Card Orders  -->
+                  <div class="col-4">
+                    <div class="card-logo d-flex align-items-center justify-content-center">
+                      <span class="icon icon-cart"></span>
                     </div>
-                    <span
-                      class="growth icon-arrow-down-right position-absolute"
-                    ></span>
+                    <p class="card-subtitle">Orders</p>
+                    <p class="card-text">510</p>
+                    <p class="card-subtitle">Per Day</p>
                   </div>
+                  <!-- End: Card Orders  -->
                 </div>
-
-                <!-- card ends  -->
               </div>
-              <!-- card card-col end  -->
-              <!-- card card-col start  -->
-              <div class="col col-md-6">
-                <!-- card start  -->
-                <div class="card card-orders">
-                  <div
-                    class="card-body d-flex justify-content-between align-items-center position-relative"
-                  >
-                    <div>
-                      <p class="card-title">Sales</p>
-                      <p class="card-desc">Total sales today</p>
-                      <p class="card-text">$500</p>
-                    </div>
-                    <div class="percent position-relative">
-                      <svg class="position-relative">
-                        <circle cx="50" cy="50" r="35" fill="red"></circle>
-                        <circle
-                          cx="50"
-                          cy="50"
-                          r="35"
-                          style="--percent: 80"
-                        ></circle>
-                      </svg>
-                      <div class="number">
-                        <span>80<span>%</span></span>
-                      </div>
-                    </div>
-                    <span
-                      class="growth icon-arrow-up-right position-absolute"
-                    ></span>
-                  </div>
-                </div>
-
-                <!-- card ends  -->
-              </div>
-              <!-- card card-col end  -->
-              <!-- card card-col start  -->
-              <div class="col col-md-6">
-                <!-- card start  -->
-                <div class="card card-visits">
-                  <div
-                    class="card-body d-flex justify-content-between align-items-center position-relative"
-                  >
-                    <div>
-                      <p class="card-title">Sales</p>
-                      <p class="card-desc">Total sales today</p>
-                      <p class="card-text">$500</p>
-                    </div>
-                    <div class="percent position-relative">
-                      <svg class="position-relative">
-                        <circle cx="50" cy="50" r="35" fill="red"></circle>
-                        <circle
-                          cx="50"
-                          cy="50"
-                          r="35"
-                          style="--percent: 70"
-                        ></circle>
-                      </svg>
-                      <div class="number">
-                        <span>70<span>%</span></span>
-                      </div>
-                    </div>
-                    <span
-                      class="growth icon-arrow-up-right position-absolute"
-                    ></span>
-                  </div>
-                </div>
-
-                <!-- card ends  -->
-              </div>
-              <!-- card card-col end  -->
             </div>
           </div>
-          <!-- revenue-stats starts -->
-          <div class="col-3">
-              <div class="revenue-stats h-100">
-                  <div>
-                    <h3 class="revenue-stats-title mb-3">Sales Revenue</h3>
-                    <div class="d-flex align-items-start">
-                      <div class="card-logo d-flex align-items-center justify-content-center">
-                        <span class="icon icon-coin-dollar"></span>
-                      </div>
-                      <div>
-                        <p class="card-title">230k</p>
-                        <p class="card-desc">Sales</p>
-                      </div>
-                    </div>
-                    <div class="d-flex align-items-start">
-                      <div class="card-logo d-flex align-items-center justify-content-center">
-                        <span class="icon icon-user"></span>
-                      </div>
-                      <div>
-                        <p class="card-title">8.549k</p>
-                        <p class="card-desc">Customers</p>
-                      </div>
-                    </div>
-                   <div class="d-flex align-items-start">
-                      <div class="card-logo d-flex align-items-center justify-content-center">
-                        <span class="icon icon-cart"></span>
-                      </div>
-                      <div>
-                        <p class="card-title">1.423k</p>
-                        <p class="card-desc">Products</p>
-                      </div>
-                    </div>
-                   <div class="d-flex align-items-start">
-                      <div class="card-logo d-flex align-items-center justify-content-center">
-                        <span class="icon icon-pie-chart"></span>
-                      </div>
-                      <div>
-                        <p class="card-title">$9745</p>
-                        <p class="card-desc">Revenue</p>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-           
-          </div>
-          <!-- revenue-stats ends -->
         </div>
-      </main>
-      <!-- main wrapper end  -->
-    </div>
-    <!-- wrapper ends  -->
-  </body>
+        <!-- End: Card Stats  -->
+
+        <div class="row g-4 mt-3">
+          <!-- Start: Card Sales  -->
+          <div class="col col-md-6">
+            <div class="card card-sales">
+              <div class="card-body d-flex justify-content-between align-items-center position-relative">
+                <div>
+                  <p class="card-title">Sales</p>
+                  <p class="card-subtitle">Total sales today</p>
+                  <p class="card-text">$500</p>
+                </div>
+                <div class="percent position-relative">
+                  <svg class="position-relative">
+                    <circle cx="50" cy="50" r="35" fill="red"></circle>
+                    <circle cx="50" cy="50" r="35" style="--percent: 55"></circle>
+                  </svg>
+                  <div class="number position-absolute">
+                    <span>55<span>%</span></span>
+                  </div>
+                </div>
+                <span class="growth icon-arrow-down-right position-absolute"></span>
+              </div>
+            </div>
+          </div>
+          <!-- End: Card Sales  -->
+
+          <!-- Start: Card Profit  -->
+          <div class="col col-md-6">
+            <div class="card card-profits">
+              <div class="card-body d-flex justify-content-between align-items-center position-relative">
+                <div>
+                  <p class="card-title">Profit</p>
+                  <p class="card-subtitle">Per day ratio</p>
+                  <p class="card-text">$150</p>
+                </div>
+
+                <div class="percent position-relative">
+                  <svg class="position-relative">
+                    <circle cx="50" cy="50" r="35" fill="red"></circle>
+                    <circle cx="50" cy="50" r="35" style="--percent: 30"></circle>
+                  </svg>
+                  <div class="number position-absolute">
+                    <span>30<span>%</span></span>
+                  </div>
+                </div>
+                <span class="growth icon-arrow-down-right position-absolute"></span>
+              </div>
+            </div>
+          </div>
+          <!-- End: Card Profit  -->
+
+          <!-- Start: Card Orders  -->
+          <div class="col col-md-6">
+            <div class="card card-orders">
+              <div class="card-body d-flex justify-content-between align-items-center position-relative">
+                <div>
+                  <p class="card-title">Orders</p>
+                  <p class="card-subtitle">Total orders today</p>
+                  <p class="card-text">1000</p>
+                </div>
+                <div class="percent position-relative">
+                  <svg class="position-relative">
+                    <circle cx="50" cy="50" r="35" fill="red"></circle>
+                    <circle cx="50" cy="50" r="35" style="--percent: 80"></circle>
+                  </svg>
+                  <div class="number position-absolute">
+                    <span>80<span>%</span></span>
+                  </div>
+                </div>
+                <span class="growth icon-arrow-up-right position-absolute"></span>
+              </div>
+            </div>
+          </div>
+          <!-- End: Card Orders  -->
+
+          <!-- Start: Card Visits  -->
+          <div class="col col-md-6">
+            <div class="card card-visits">
+              <div class="card-body d-flex justify-content-between align-items-center position-relative">
+                <div>
+                  <p class="card-title">Visits</p>
+                  <p class="card-subtitle">Total visits today</p>
+                  <p class="card-text">400</p>
+                </div>
+                <div class="percent position-relative">
+                  <svg class="position-relative">
+                    <circle cx="50" cy="50" r="35" fill="red"></circle>
+                    <circle cx="50" cy="50" r="35" style="--percent: 70"></circle>
+                  </svg>
+                  <div class="number position-absolute">
+                    <span>70<span>%</span></span>
+                  </div>
+                </div>
+                <span class="growth icon-arrow-up-right position-absolute"></span>
+              </div>
+            </div>
+          </div>
+          <!-- End: Card Visits  -->
+        </div>
+      </div>
+      <!-- End: Cards Section -->
+
+      <!-- Start:Revenue Stats -->
+      <div class="revenue-stats h-100 ms-4">
+        <div>
+          <h3 class="revenue-stats-title mb-4">Sales Revenue</h3>
+          <div class="d-flex align-items-start mb-4">
+            <div class="card-logo d-flex align-items-center justify-content-center">
+              <span class="icon icon-coin-dollar"></span>
+            </div>
+            <div>
+              <p class="card-title">230k</p>
+              <p class="card-subtitle">Sales</p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start mb-4">
+            <div class="card-logo d-flex align-items-center justify-content-center">
+              <span class="icon icon-user"></span>
+            </div>
+            <div>
+              <p class="card-title">8.549k</p>
+              <p class="card-subtitle">Customers</p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start mb-4">
+            <div class="card-logo d-flex align-items-center justify-content-center">
+              <span class="icon icon-cart"></span>
+            </div>
+            <div>
+              <p class="card-title">1.423k</p>
+              <p class="card-subtitle">Products</p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start mb-4">
+            <div class="card-logo d-flex align-items-center justify-content-center">
+              <span class="icon icon-pie-chart"></span>
+            </div>
+            <div>
+              <p class="card-title">$9745</p>
+              <p class="card-subtitle">Revenue</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- End:Revenue Stats -->
+    </main>
+    <!-- End:Main  -->
+  </div>
+</body>
+
 </html>
