@@ -14,59 +14,64 @@
 </head>
 
 <body>
-  <div class="d-flex h-100 overflow-hidden">
+  <div class="d-flex h-100 overflow-hidden ">
+
+    <input type="checkbox" id="menu"/>
+    <label for="menu" id="toggle" class="position-absolute">
+      <span class="icon-hamburger"></span>
+    </label>
 
     <!-- Start:Sidebar -->
     <aside class="sidebar d-flex flex-column h-100 overflow-hidden">
       <!-- Star:Brand logo  -->
       <div class="brand-logo d-flex align-items-center justify-content-start">
-        <span class="brand-logo-icon icon-logo"></span>
+        <span class="brand-logo-icon icon-brand mb-md-5 mt-md-5"></span>
       </div>
       <!-- End:Brand logo  -->
 
       <div class="d-flex flex-column justify-content-between flex-grow-1 overflow-hidden">
         <!-- Start: Navbar  -->
-        <nav class="nav overflow-auto">
+        <nav class="nav overflow-auto position-relative">
           <ul>
-            <li class="nav-item">
+            <li class="nav-item mb-3">
               <a href="#" class="nav-link active">
-                <span class="icon icon-home me-3"></span>
-                Home
+                <span class="icon icon-home ms-3 me-4"></span>
+                <span>Home</span> 
               </a>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item mb-3">
               <a href="#" class="nav-link">
-                <span class="icon icon-trophy me-3"></span>
-                Projects
+                <span class="icon icon-trophy ms-3 me-4"></span>
+                <span>Projects</span>  
               </a>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item mb-3">
               <a href="#" class="nav-link">
-                <span class="icon icon-library me-3"></span>
-                Billing
+                <span class="icon icon-building ms-3 me-4"></span>
+                <span>Billing</span>  
               </a>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item mb-3">
               <a href="#" class="nav-link">
-                <span class="icon icon-user me-3"></span>
-                Team Members
+                <span class="icon icon-user ms-3 me-4"></span>
+                <span>Team Members</span>  
               </a>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item mb-3">
               <a href="#" class="nav-link">
-                <span class="icon icon-stats-bars me-3"></span>
-                Stats
+                <span class="icon icon-stats ms-3 me-4"></span>
+                <span>Stats</span>  
               </a>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item mb-3">
               <a href="#" class="nav-link">
-                <span class="icon icon-settings me-3"></span>
-                Settings
+                <span class="icon icon-settings ms-3 me-4"></span>
+                <span>Settings</span> 
               </a>
             </li>
           </ul>
@@ -85,10 +90,10 @@
 
       </div>
     </aside>
-    <!-- End:idebar -->
+    <!-- End:Sidebar -->
 
     <!-- Start:Main -->
-    <main class="content-wrapper d-flex flex-grow-1 overflow-auto">
+    <main class="content-wrapper d-flex flex-grow-1 overflow-auto flex-column flex-md-row">
 
       <!-- Start:Cards Section -->
       <div class="flex-grow-1 d-flex flex-column">
@@ -99,7 +104,7 @@
             <div class="d-flex align-item-center search-box d-flex input-group">
               <input type="text" id="search" name="search" placeholder="Search for stats"
                 class="form-control rounded position-relative" />
-              <span class="search-icon icon-search position-absolute"></span>
+              <label for="search"><span class="search-icon icon-search position-absolute"></span></label>
             </div>
           </div>
         </div>
@@ -114,7 +119,7 @@
 
           <div class="form-group position-relative">
             <input type="text" class="form-control" id="filter-box" placeholder="Filter">
-            <span class="icon-filter icon-equalizer position-absolute"></span>
+            <label for="filter-box"><span class="icon-filter icon-equalizer position-absolute"></span></label>
           </div>
         </div>
         <!-- End:User greeting and filter  -->
@@ -127,7 +132,7 @@
                 <div class="row card-body">
 
                   <!-- Start: Card Views  -->
-                  <div class="col-4">
+                  <div class="col-12 col-sm-4 mb-4">
                     <div
                       class="card-logo d-flex align-items-center justify-content-center d-flex align-items-center justify-content-center">
                       <span class="icon icon-eye"></span>
@@ -139,9 +144,9 @@
                   <!-- End: Card Views  -->
 
                   <!-- Start: Card Visits  -->
-                  <div class="col-4">
+                  <div class="col-12 col-sm-4 mb-4">
                     <div class="card-logo d-flex align-items-center justify-content-center">
-                      <span class="icon icon-compass"></span>
+                      <span class="icon icon-visits"></span>
                     </div>
                     <p class="card-subtitle">Visits</p>
                     <p class="card-text">2000</p>
@@ -151,9 +156,9 @@
                   <!-- End: Card Visits  -->
 
                   <!-- Start: Card Orders  -->
-                  <div class="col-4">
+                  <div class="col-12 col-sm-4 mb-4">
                     <div class="card-logo d-flex align-items-center justify-content-center">
-                      <span class="icon icon-cart"></span>
+                      <span class="icon icon-orders"></span>
                     </div>
                     <p class="card-subtitle">Orders</p>
                     <p class="card-text">510</p>
@@ -169,7 +174,7 @@
 
         <div class="row g-4 mt-3">
           <!-- Start: Card Sales  -->
-          <div class="col col-md-6">
+          <div class="col-sm-12 col-lg-6">
             <div class="card card-sales">
               <div class="card-body d-flex justify-content-between align-items-center position-relative">
                 <div>
@@ -193,7 +198,7 @@
           <!-- End: Card Sales  -->
 
           <!-- Start: Card Profit  -->
-          <div class="col col-md-6">
+          <div class="col-sm-12 col-lg-6">
             <div class="card card-profits">
               <div class="card-body d-flex justify-content-between align-items-center position-relative">
                 <div>
@@ -218,7 +223,7 @@
           <!-- End: Card Profit  -->
 
           <!-- Start: Card Orders  -->
-          <div class="col col-md-6">
+          <div class="col-sm-12 col-lg-6">
             <div class="card card-orders">
               <div class="card-body d-flex justify-content-between align-items-center position-relative">
                 <div>
@@ -242,7 +247,7 @@
           <!-- End: Card Orders  -->
 
           <!-- Start: Card Visits  -->
-          <div class="col col-md-6">
+          <div class="col-sm-12 col-lg-6">
             <div class="card card-visits">
               <div class="card-body d-flex justify-content-between align-items-center position-relative">
                 <div>
@@ -269,12 +274,12 @@
       <!-- End: Cards Section -->
 
       <!-- Start:Revenue Stats -->
-      <div class="revenue-stats h-100 ms-4">
-        <div>
-          <h3 class="revenue-stats-title mb-4">Sales Revenue</h3>
+      <div class="revenue-stats h-100 ms-md-4 overflow-hidden d-flex flex-grow-1 flex-column">
+        <h3 class="revenue-stats-title mb-4">Sales Revenue</h3>
+        <div class="h-100 overflow-auto">
           <div class="d-flex align-items-start mb-4">
             <div class="card-logo d-flex align-items-center justify-content-center">
-              <span class="icon icon-coin-dollar"></span>
+              <span class="icon icon-sales"></span>
             </div>
             <div>
               <p class="card-title">230k</p>
@@ -294,7 +299,7 @@
 
           <div class="d-flex align-items-start mb-4">
             <div class="card-logo d-flex align-items-center justify-content-center">
-              <span class="icon icon-cart"></span>
+              <span class="icon icon-products"></span>
             </div>
             <div>
               <p class="card-title">1.423k</p>
@@ -304,7 +309,7 @@
 
           <div class="d-flex align-items-start mb-4">
             <div class="card-logo d-flex align-items-center justify-content-center">
-              <span class="icon icon-pie-chart"></span>
+              <span class="icon icon-revenue"></span>
             </div>
             <div>
               <p class="card-title">$9745</p>

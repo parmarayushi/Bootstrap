@@ -1,6 +1,9 @@
 #greet-welcome {
   font-size: 0.75rem;
   color: #bababa;
+  @include media-breakpoint-down(md) { 
+    position: relative;
+  }
 }
 
 .content-wrapper {

@@ -1,11 +1,22 @@
 .revenue-stats {
   flex: 0 0 $revenue-stats-width;
-  max-width: $revenue-stats-width;
-  width:300px;
+  width: $revenue-stats-width;
   padding: $revenue-stats-padding-y $revenue-stats-padding-x;
   background-color: $revenue-stats-bg;
   @include border-radius(1.5rem);
   color: $revenue-stats-color;
+
+  @include media-breakpoint-down(md) {
+    flex:0 0 100%;
+    width:100%;
+    margin-top: 20px;
+  }
+
+  // @include media-breakpoint-down(lg) {
+  //   flex:0 0 100%;
+  //   width:100%;
+  //   margin-top: 20px;
+  // }
 
   &-title {
     font-weight: 500;

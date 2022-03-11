@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?5mzyql');
-  src:  url('fonts/icomoon.eot?5mzyql#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?5mzyql') format('truetype'),
-    url('fonts/icomoon.woff?5mzyql') format('woff'),
-    url('fonts/icomoon.svg?5mzyql#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?fsrmig');
+  src:  url('fonts/icomoon.eot?fsrmig#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?fsrmig') format('truetype'),
+    url('fonts/icomoon.woff?fsrmig') format('woff'),
+    url('fonts/icomoon.svg?fsrmig#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -19,41 +19,31 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  
-  /* Enable Ligatures ================ */
-  letter-spacing: 0;
-  -webkit-font-feature-settings: "liga";
-  -moz-font-feature-settings: "liga=1";
-  -moz-font-feature-settings: "liga";
-  -ms-font-feature-settings: "liga" 1;
-  font-feature-settings: "liga";
-  -webkit-font-variant-ligatures: discretionary-ligatures;
-  font-variant-ligatures: discretionary-ligatures;
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-growth-arrow:before {
+.icon-orders:before {
   content: "\e900";
 }
 .icon-home:before {
-  content: "\e902";
+  content: "\e901";
 }
-.icon-library:before {
+.icon-brand:before {
+  content: "\e915";
+}
+.icon-building:before {
   content: "\e921";
 }
-.icon-cart:before {
+.icon-products:before {
   content: "\e93a";
 }
-.icon-coin-dollar:before {
+.icon-sales:before {
   content: "\e93b";
 }
-.icon-credit-card:before {
-  content: "\e93f";
-}
-.icon-compass:before {
+.icon-visits:before {
   content: "\e94a";
 }
 .icon-user:before {
@@ -68,30 +58,24 @@
 .icon-settings:before {
   content: "\e994";
 }
-.icon-pie-chart:before {
+.icon-revenue:before {
   content: "\e99a";
 }
-.icon-stats-bars:before {
+.icon-stats:before {
   content: "\e99c";
-}
-.icon-stats-bars2:before {
-  content: "\e99d";
 }
 .icon-trophy:before {
   content: "\e99e";
 }
+.icon-hamburger:before {
+  content: "\e9bd";
+}
 .icon-eye:before {
   content: "\e9ce";
 }
-.icon-arrow-up-right:before {
-  content: "\ea3b";
+.icon-circle-right:before {
+  content: "\ea42";
 }
-.icon-arrow-down-right:before {
-  content: "\ea3d";
-}
-.icon-radio-checked:before {
-  content: "\ea54";
-}
-.icon-logo:before {
-  content: "\eae9";
+.icon-circle-left:before {
+  content: "\ea44";
 }
